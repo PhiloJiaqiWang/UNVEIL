@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNVEIL</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/game.css">
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/tileset.js"></script>
+    <script src="./lib/entity.js"></script>
+    <script src="./lib/clue.js"></script>
+    <script src="./game.js"></script>
+  </head>
+
+<body>
+ 
+  <div class="game" id="myCanvas">
+      </div>
+
+   
+  <div class="interaction" >
+    <p id="interaction">
+
+    </p>
+    <input class="round_button" style="display:none;"  id="yes"  type="button" value="Yes" onclick="keepIt(this.id)">
+   <input class="round_button" style="display:none;" id="no" type="button" value="No" onclick="keepIt(this.id)">
+    
+    <input class="round_button" style="display:none;"  id="fake"  type="button" value="Fake" onclick="chestQ(this.id);">
+   <input class="round_button" style="display:none;" id="true" type="button" value="True" onclick="chestQ(this.id);">
+    
+    <input class="round_button" style="display:none;" id="throw" type="button" value="Trow It" onclick="throwItOut()">
+
+    <input class="round_button" style="display:none;"  id="openIt"  type="button" value="Open!" onclick="openIt()">
+
+    
+  </div>
+
+  <div class="clues">
+    <p id="clue">
+
+    </p>
+  </div>
+
+  <div class="backpack">
+    <img src="images/mouse.png" width=35%"/></img>
+
+
+<div class="clue" >
+<img id="clue4" src="" onclick="showClue(this.id);" width=100% />
+</div>
+<div class="clue" >
+<img id="clue3" src="" onclick="showClue(this.id);" width=100% />
+</div>
+<div class="clue" >
+<img id="clue2" src="" onclick="showClue(this.id);" width=100% />
+</div>
+<div class="clue" >
+<img id="clue1" onclick="showClue(this.id);" src="" width=100% />
+</div>
+  </div>
+  <div class="instruction">
+    
+  </div>
+</body>
+ 
+</html>
