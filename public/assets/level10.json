@@ -1,0 +1,93 @@
+{ "position":{ "x": 300, "y": 400 },
+  "clueList":[ {
+    "clueIdx": 1,
+    "imageSource": "",
+    "clueOccupyList":[0, 0, 0, 0],
+    "tileSize" :"",
+    "clueInfo":"I have been into this room.",
+    "clueDetail":"This is Dr.Green's office.",
+    "clueType":"clue",
+    "ifTrue": 0
+
+  },
+  {
+    "clueIdx": 5,
+    "imageSource": "./images/secretNote.png",
+    "clueOccupyList":[6, 5, 1, 1],
+    "tileSize" :"",
+    "clueInfo":"A pink hair lady is standing here, seeming to want to talk to me.",
+    "clueDetail":{
+      "Who&nbsp;are&nbsp;you?":"Hello, I am White, a journalist. I am looking for Dr.Green. Do you know where he is?",
+      "Why&nbsp;are&nbsp;you&nbsp;looking&nbsp;for&nbsp;him?":"He said he would give me some information to publish about the immortality rumor. But I see you have got the reports yourself. I doubt Dr. Green will give it to you, so tell me where he is! Did you hurt him? (She seems very angry)",
+      "Do&nbsp;you&nbsp;know&nbsp;who&nbsp;I&nbsp;am?": "(She looks at me very strangely.) I see. (She calmed down.) Can you do me a favor? And I will tell you everything I know.",
+      "What&nbsp;is&nbsp;it?" : "Apart from the report, I want to do another pitch about how this rumor got spreaded like this. What is behind all those people who believe and spread the misinformation? Can you help talking with villagers, and get back to me their stories?",
+      "Yes,&nbsp;I&nbsp;can." : "goIntoNext();"
+    },
+    "clueType":"dialogue",
+    "ifTrue": 0
+
+  }
+
+
+  ],
+  "hint": "The villagers left after I showed them the report, but there is one person still here. Maybe I should talk to the pink hair lady.",
+  "mapLis": {
+   "basic" : [
+     [
+[5,5,5,5,5,5,5,5,5,5],
+       [5,5,5,5,5,5,5,5,5,5],
+       [5,121,121,5,5,5,5,5,5,5],
+       [5,121,5,5,5,5,5,5,5,5],
+       [5,121,121,5,5,5,5,121,121,5],
+       [5,5,5,5,5,5,5,121,5,5],
+       [5,5,5,5,121,121,121,121,5,5],
+       [5,5,121,121,121,5,5,5,5,5],
+       [5,5,5,5,121,121,121,121,121,5],
+       [5,5,5,5,5,5,5,5,5,5]
+],
+     [
+[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],
+[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],
+[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],
+[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],
+[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],
+       [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],
+       [-1,-1,-1,-1,-1,-1,-1,-1,640,-1],
+[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],
+[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],
+[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]
+]
+
+
+   ],
+
+  "solving": [
+    [640,1278,1280,644,584,645,5,1217,1218,586],
+    [527,1335,1337,-1,641,-1,-1,1274,1275,643],
+    [5,-1,-1,-1,-1,-1,-1,1488,1489,5],
+    [585,-1,-1,515,516,517,-1,1545,1547,526],
+    [642,-1,-1,572,1,574,-1,-1,-1,5],
+    [1219,1220,-1,629,630,631,1758,-1,583,5],
+    [1274,1275,-1,-1,-1,-1,-1,-1,640,5],
+    [1488,1489,-1,-1,-1,-1,-1,-1,-1,5],
+      [1545,1547,-1,-1,-1,-1,-1,-1,-1,121],
+    [640,5,5,5,532,5,5,5,5,5]
+],
+
+    "basic2":
+   [[
+[-1,1326,1327,-1,-1,-1,-1,-1,-1,-1],
+[-1,433,434,-1,-1,-1,-1,-1,-1,-1],
+[-1,-1,-1,-1,-1,-1,-1,1331,1332,-1],
+     [-1,-1,-1,-1,-1,-1,-1,486,487,-1],
+     [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],
+[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],
+[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],
+[1333,1334,-1,-1,-1,-1,-1,-1,-1,-1],
+[583,-1,-1,-1,-1,-1,-1,-1,-1,-1],
+[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]
+]]
+
+  }
+
+}
